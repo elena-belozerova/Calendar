@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="container">
+        <div class="header__section">
+          <div class="header__buttons">
+            <button class="header__button">Добавить</button>
+            <button class="header__button">Обновить</button>
+          </div>
+          <div class="header__search">
+            <img class="header__img" src="./img/search.svg" alt="search" />
+            <input
+              class="header__input"
+              type="text"
+              placeholder="Событие, дата или участник"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <!-- navigation -->
+      <div class="nav">
+        <div class="nav__months">
+          <button class="nav__button">◄</button>
+          <div class="nav__month">Март 2013</div>
+          <button class="nav__button">►</button>
+        </div>
+        <button class="nav__day js-button-today">Сегодня</button>
+      </div>
+      <!-- calendar -->
+      <div class="calendar">
+        <div class="calendar__day">Понедельник, 25</div>
+        <div class="calendar__day">Вторник, 26</div>
+        <div class="calendar__day">Среда, 27</div>
+        <div class="calendar__day">Четверг, 28</div>
+        <div class="calendar__day">Пятница, 1</div>
+        <div class="calendar__day">Суббота, 2</div>
+        <div class="calendar__day">Воскресенье, 3</div>
+        <div class="calendar__day js-today">4</div>
+        <div class="calendar__day">5</div>
+        <div class="calendar__day">6</div>
+        <div class="calendar__day">7</div>
+        <div class="calendar__day">8</div>
+        <div class="calendar__day">9</div>
+        <div class="calendar__day">10</div>
+        <div class="calendar__day">11</div>
+        <div class="calendar__day">12</div>
+        <div class="calendar__day">13</div>
+        <div class="calendar__day">14</div>
+        <div class="calendar__day">15</div>
+        <div class="calendar__day">16</div>
+        <div class="calendar__day">17</div>
+        <div class="calendar__day">18</div>
+        <div class="calendar__day">19</div>
+        <div class="calendar__day">20</div>
+        <div class="calendar__day">21</div>
+        <div class="calendar__day">22</div>
+        <div class="calendar__day">23</div>
+        <div class="calendar__day">24</div>
+        <div class="calendar__day">25</div>
+        <div class="calendar__day">26</div>
+        <div class="calendar__day">27</div>
+        <div class="calendar__day">28</div>
+        <div class="calendar__day">29</div>
+        <div class="calendar__day">30</div>
+        <div class="calendar__day">31</div>
+      </div>
+      <!-- modal -->
+      <div class="modal js-modal">
+        <div class="modal__content">
+          <form class="modal__form js-form" method="post">
+            <input class="modal__input" name="event" type="text" placeholder="Событие" />
+            <input class="modal__input" type="text" placeholder="День, месяц" />
+            <input class="modal__input" type="text" placeholder="Имена участников" />
+            <textarea  class="modal__input" type="text" placeholder="Описание"></textarea>
+            <button class="modal__btn" type="submit">Готово</button>
+            <button class="modal__btn" >Удалить</button>
+          </form>
+          <button class="modal__close js-close">&#10006;</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
